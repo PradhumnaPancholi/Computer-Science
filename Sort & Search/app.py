@@ -59,3 +59,42 @@ def insertion_sort(list=[]):
     return list
 
 print(insertion_sort(unsorted_list))
+
+# ===============================================================================================================================
+
+# Merge Sort: scalable, recursive, uses divide and conquer approach
+
+def merge_sort(list= []):
+    if len(list) > 1:  # recursive until array contains only one item.
+        mid = len(list)//2
+        left_list = list[:mid]
+        right_list = list[mid:]
+        merge_sort(left_list)
+        merge_sort(right_list)
+
+        i = 0  # for index of left_list
+        j = 0  # for index of right_list
+        k = 0  # for index of original list
+
+        while i < len(left_list) and j < len(right_list):
+            if left_list[i] < right_list[j]:
+                list[k] = left_list[i]
+                i = i + 1
+                k = k + 1
+            else:
+                list[k] = right_list[j]
+                j = j + 1
+                k = k + 1
+
+        while i < len(left_list):
+            list[k] = left_list[i]
+            i = i + 1
+            k = k + 1
+        while j < len(right_list):
+            list[k] = right_list[j]
+            j = j + 1
+            k = k + 1
+    return list
+
+
+print(merge_sort(unsorted_list))
