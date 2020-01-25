@@ -23,3 +23,36 @@ Stacks & Queues are data structure. So, it's important to understand difference 
 
 <hr>
 
+A collection is an abstract data type whose values are multiset od items(same data type).
+
+Stack & Queue differ in way of their operation.
+
+### Stack Operations
+
+1. Add item to the collection.
+2. Remove & return the "most" recent item.
+3. Works on "LIFO" priciple i.e last in first out.
+4. Returns the size of collection.
+
+#### Example:-
+
+Operations available on stack are push(add) and pop(remove).
+
+Suppose you add '5' to the existing stack [4,3,2,1]. Then it would be [5,4,3,2,1].
+
+And if your pop an item, it would be '5' due to LIFO principle.
+
+### Queue Operations
+
+1. Add item to the collection.
+2. Remove & return the "least" recent item.
+3. Works on "FIFO" priciple i.e first in first out.
+4. Returns the size of collection.
+
+#### Example:-
+
+Operations available on stack are enqueue(add) and dequeue(remove).
+
+Suppose you add '5' to the existing stack [1,2,3,4]. Then it would be [1,2,3,4,5].
+
+And if your pop an item, it would be '1' due to FIFO principle.
