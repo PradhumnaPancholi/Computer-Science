@@ -23,7 +23,7 @@ Stacks & Queues are data structure. So, it's important to understand difference 
 
 <hr>
 
-A collection is an abstract data type whose values are multiset od items(same data type).
+A collection is an abstract data type whose values are multiset of items(same data type).
 
 Stack & Queue differ in way of their operation.
 
@@ -33,6 +33,7 @@ Stack & Queue differ in way of their operation.
 2. Remove & return the "most" recent item.
 3. Works on "LIFO" priciple i.e last in first out.
 4. Returns the size of collection.
+5. Verify is it's not empty.
 
 #### Example:-
 
@@ -48,6 +49,7 @@ And if your pop an item, it would be '5' due to LIFO principle.
 2. Remove & return the "least" recent item.
 3. Works on "FIFO" priciple i.e first in first out.
 4. Returns the size of collection.
+5. Verify is it's not empty.
 
 #### Example:-
 
@@ -56,3 +58,17 @@ Operations available on stack are enqueue(add) and dequeue(remove).
 Suppose you add '5' to the existing stack [1,2,3,4]. Then it would be [1,2,3,4,5].
 
 And if your pop an item, it would be '1' due to FIFO principle.
+
+<hr>
+
+### Performance Specifications
+
+Performance matters. So, it's very important to provide guaranteed performance for a data structure.
+
+Following are the performance specifications for a stacks & queues.
+
+1. All operations must take constant time.
+2. Shouldn't waste memory. Usage must be linear in the size of collection (when non-empty).
+3. No limit in the code for collection size.
+
+Performance playes key role in the implementation of data structure. It's not an stack/queue if there's no constant time for each operation. It can be a different type of data structure but not stack or queue.
